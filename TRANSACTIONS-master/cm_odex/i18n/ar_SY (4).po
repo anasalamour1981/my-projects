@@ -1,0 +1,440 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* cm_odex
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-07-24 08:18+0000\n"
+"PO-Revision-Date: 2017-07-24 11:34+0300\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"Language: ar\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#. module: cm_odex
+#: model:ir.actions.act_window,help:cm_odex.cm_entity_list_action
+msgid ""
+"<p class=\"oe_view_nocontent_create\">Create the first Entity\n"
+"                </p>\n"
+"            "
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">انشاء وحدة جديدة\n"
+"                </p>\n"
+"            "
+
+#. module: cm_odex
+#: model:ir.actions.act_window,help:cm_odex.cm_transaction_important_list_action
+msgid ""
+"<p class=\"oe_view_nocontent_create\">Create the first Important Degrees\n"
+"                </p>\n"
+"            "
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">انشاء درجة أهمية جديدة\n"
+"                </p>\n"
+"            "
+
+#. module: cm_odex
+#: model:ir.actions.act_window,help:cm_odex.cm_transaction_in_list_action
+msgid ""
+"<p class=\"oe_view_nocontent_create\">Create the first Incoming Transaction\n"
+"                </p>\n"
+"            "
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">انشاء معاملة واردة جديدة\n"
+"                </p>\n"
+"            "
+
+#. module: cm_odex
+#: model:ir.actions.act_window,help:cm_odex.cm_subject_type_list_action
+msgid ""
+"<p class=\"oe_view_nocontent_create\">Create the first Subject Type\n"
+"                </p>\n"
+"            "
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">انشاء نوع موضوع جديد\n"
+"                </p>\n"
+"            "
+
+#. module: cm_odex
+#: model:ir.actions.act_window,help:cm_odex.cm_transaction_out_list_action
+msgid ""
+"<p class=\"oe_view_nocontent_create\">Create the first outgoing Transaction\n"
+"                </p>\n"
+"            "
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">انشاء معاملة صادرة جديدة\n"
+"                </p>\n"
+"            "
+
+#. module: cm_odex
+#: field:cm.transaction.in,cc_ids:0 field:cm.transaction.out,cc_ids:0
+msgid "CC To"
+msgstr "صورة الى"
+
+#. module: cm_odex
+#: code:addons/cm_odex/models/__init__.py:67
+#, python-format
+msgid "Cannot convert date to hijri!"
+msgstr "Cannot convert date to hijri!"
+
+#. module: cm_odex
+#: model:ir.model,name:cm_odex.model_cm_transaction
+msgid "Communication Transaction"
+msgstr "معاملة"
+
+#. module: cm_odex
+#: field:cm.transaction.in,user_id:0 field:cm.transaction.out,user_id:0
+msgid "Created By"
+msgstr "مدخل المعاملة"
+
+#. module: cm_odex
+#: field:cm.transaction.in,date:0 field:cm.transaction.out,date:0
+msgid "Created Date"
+msgstr "تاريخ الانشاء"
+
+#. module: cm_odex
+#: field:cm.entity,create_uid:0 field:cm.subject.type,create_uid:0
+#: field:cm.transaction.important,create_uid:0
+#: field:cm.transaction.in,create_uid:0 field:cm.transaction.out,create_uid:0
+msgid "Created by"
+msgstr "مدخل المعاملة"
+
+#. module: cm_odex
+#: field:cm.entity,create_date:0 field:cm.subject.type,create_date:0
+#: field:cm.transaction.important,create_date:0
+#: field:cm.transaction.in,create_date:0 field:cm.transaction.out,create_date:0
+msgid "Created on"
+msgstr "تاريخ الادخال"
+
+#. module: cm_odex
+#: help:cm.transaction.in,message_last_post:0
+#: help:cm.transaction.out,message_last_post:0
+msgid "Date of the last message posted on the record."
+msgstr "Date of the last message posted on the record."
+
+#. module: cm_odex
+#: field:cm.entity,display_name:0 field:cm.subject.type,display_name:0
+#: field:cm.transaction.important,display_name:0
+#: field:cm.transaction.in,display_name:0
+#: field:cm.transaction.out,display_name:0
+msgid "Display Name"
+msgstr "المسمى"
+
+#. module: cm_odex
+#: code:addons/cm_odex/models/entity.py:13 selection:cm.entity,type:0
+#, python-format
+msgid "Employee"
+msgstr "موظف"
+
+#. module: cm_odex
+#: view:cm.entity:cm_odex.cm_entity_tree
+#: model:ir.actions.act_window,name:cm_odex.cm_entity_list_action
+#: model:ir.ui.menu,name:cm_odex.cm_entity_menu
+msgid "Entities"
+msgstr "العناوين و الجهات"
+
+#. module: cm_odex
+#: view:cm.entity:cm_odex.cm_entity_form
+msgid "Entity"
+msgstr "جهة"
+
+#. module: cm_odex
+#: field:cm.entity,type:0
+msgid "Entity Type"
+msgstr "نوع الجهة"
+
+#. module: cm_odex
+#: code:addons/cm_odex/models/entity.py:14 selection:cm.entity,type:0
+#, python-format
+msgid "External Unit"
+msgstr "جهة خارجية"
+
+#. module: cm_odex
+#: field:cm.transaction.out,follow_reply:0
+msgid "Follow Reply ?"
+msgstr "هل يحتاج الى متابعة و رد ؟"
+
+#. module: cm_odex
+#: field:cm.transaction.in,message_follower_ids:0
+#: field:cm.transaction.out,message_follower_ids:0
+msgid "Followers"
+msgstr "Followers"
+
+#. module: cm_odex
+#: code:addons/cm_odex/models/outgoing.py:38
+#: selection:cm.transaction.out,type:0
+#, python-format
+msgid "Forwarded Transaction"
+msgstr "إلحاقي"
+
+#. module: cm_odex
+#: help:cm.transaction.in,message_summary:0
+#: help:cm.transaction.out,message_summary:0
+msgid "Holds the Chatter summary (number of messages, ...). This summary is directly in html format in order to be inserted in kanban views."
+msgstr "Holds the Chatter summary (number of messages, ...). This summary is directly in html format in order to be inserted in kanban views."
+
+#. module: cm_odex
+#: field:cm.entity,id:0 field:cm.subject.type,id:0
+#: field:cm.transaction.important,id:0 field:cm.transaction.in,id:0
+#: field:cm.transaction.out,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: cm_odex
+#: help:cm.transaction.in,message_unread:0
+#: help:cm.transaction.out,message_unread:0
+msgid "If checked new messages require your attention."
+msgstr "If checked new messages require your attention."
+
+#. module: cm_odex
+#: field:cm.transaction.important,name:0 field:cm.transaction.in,important_id:0
+#: field:cm.transaction.out,important_id:0
+msgid "Important Degree"
+msgstr "درجة الاهمية"
+
+#. module: cm_odex
+#: model:ir.ui.menu,name:cm_odex.cm_transaction_important_menu
+msgid "Important Degrees"
+msgstr "درجات الاهمية"
+
+#. module: cm_odex
+#: model:ir.actions.act_window,name:cm_odex.cm_transaction_important_list_action
+msgid "Important degrees"
+msgstr "درجات الأهمية"
+
+#. module: cm_odex
+#: field:cm.transaction.in,from_id:0
+msgid "Incoming From"
+msgstr "جهة الاعداد"
+
+#. module: cm_odex
+#: field:cm.transaction.in,name:0
+msgid "Incoming Number"
+msgstr "ترقيم الوارد"
+
+#. module: cm_odex
+#: field:cm.transaction.out,incoming_id:0
+#: model:ir.model,name:cm_odex.model_cm_transaction_in
+msgid "Incoming Transaction"
+msgstr "معاملة واردة"
+
+#. module: cm_odex
+#: model:ir.actions.act_window,name:cm_odex.cm_transaction_in_list_action
+#: model:ir.ui.menu,name:cm_odex.cm_transaction_in_menu
+msgid "Incoming Transactions"
+msgstr "معاملات واردة"
+
+#. module: cm_odex
+#: field:cm.transaction.in,type:0
+msgid "Incoming Type"
+msgstr "نوع الوارد"
+
+#. module: cm_odex
+#: code:addons/cm_odex/models/entity.py:12 selection:cm.entity,type:0
+#, python-format
+msgid "Internal Unit"
+msgstr "جهة داخلية"
+
+#. module: cm_odex
+#: field:cm.transaction.in,message_is_follower:0
+#: field:cm.transaction.out,message_is_follower:0
+msgid "Is a Follower"
+msgstr "Is a Follower"
+
+#. module: cm_odex
+#: field:cm.transaction.in,message_last_post:0
+#: field:cm.transaction.out,message_last_post:0
+msgid "Last Message Date"
+msgstr "Last Message Date"
+
+#. module: cm_odex
+#: field:cm.entity,__last_update:0 field:cm.subject.type,__last_update:0
+#: field:cm.transaction.important,__last_update:0
+#: field:cm.transaction.in,__last_update:0
+#: field:cm.transaction.out,__last_update:0
+msgid "Last Modified on"
+msgstr "Last Modified on"
+
+#. module: cm_odex
+#: field:cm.entity,write_uid:0 field:cm.subject.type,write_uid:0
+#: field:cm.transaction.important,write_uid:0
+#: field:cm.transaction.in,write_uid:0 field:cm.transaction.out,write_uid:0
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: cm_odex
+#: field:cm.entity,write_date:0 field:cm.subject.type,write_date:0
+#: field:cm.transaction.important,write_date:0
+#: field:cm.transaction.in,write_date:0 field:cm.transaction.out,write_date:0
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: cm_odex
+#: field:cm.transaction.in,message_ids:0 field:cm.transaction.out,message_ids:0
+msgid "Messages"
+msgstr "Messages"
+
+#. module: cm_odex
+#: help:cm.transaction.in,message_ids:0 help:cm.transaction.out,message_ids:0
+msgid "Messages and communication history"
+msgstr "Messages and communication history"
+
+#. module: cm_odex
+#: field:cm.entity,name:0
+msgid "Name"
+msgstr "الاسم"
+
+#. module: cm_odex
+#: code:addons/cm_odex/models/incoming.py:23
+#: code:addons/cm_odex/models/outgoing.py:37 selection:cm.transaction.in,type:0
+#: selection:cm.transaction.out,type:0
+#, python-format
+msgid "New Transaction"
+msgstr "معاملة جديدة"
+
+#. module: cm_odex
+#: field:cm.transaction.out,from_id:0
+msgid "Outgoing From"
+msgstr "جهة الاعداد"
+
+#. module: cm_odex
+#: field:cm.transaction.out,name:0
+msgid "Outgoing Number"
+msgstr "رقم المعاملة"
+
+#. module: cm_odex
+#: model:ir.model,name:cm_odex.model_cm_transaction_out
+msgid "Outgoing Transaction"
+msgstr "معاملة صادرة"
+
+#. module: cm_odex
+#: model:ir.actions.act_window,name:cm_odex.cm_transaction_out_list_action
+#: model:ir.ui.menu,name:cm_odex.cm_transaction_out_menu
+msgid "Outgoing Transactions"
+msgstr "معاملات صادرة"
+
+#. module: cm_odex
+#: field:cm.transaction.out,type:0
+msgid "Outgoing Type"
+msgstr "نوع الصادر"
+
+#. module: cm_odex
+#: field:cm.entity,partner_id:0
+msgid "Partner"
+msgstr "الشريك"
+
+#. module: cm_odex
+#: code:addons/cm_odex/models/outgoing.py:39
+#: selection:cm.transaction.out,type:0
+#, python-format
+msgid "Reply"
+msgstr "جوابي"
+
+#. module: cm_odex
+#: code:addons/cm_odex/models/entity.py:24
+#: code:addons/cm_odex/models/entity.py:30
+#, python-format
+msgid "Riyadh"
+msgstr "الرياض"
+
+#. module: cm_odex
+#: view:cm.transaction.in:cm_odex.cm_transaction_in_form
+#: view:cm.transaction.out:cm_odex.cm_transaction_out_form
+msgid "Run Procedure"
+msgstr "تنفيذ اجراء"
+
+#. module: cm_odex
+#: field:cm.transaction.in,to_ids:0 field:cm.transaction.out,to_ids:0
+msgid "Send To"
+msgstr "الجهة الصادرة اليها"
+
+#. module: cm_odex
+#: model:ir.ui.menu,name:cm_odex.cm_settings_menu
+msgid "Settings"
+msgstr "الإعدادات"
+
+#. module: cm_odex
+#: field:cm.transaction.in,state:0 field:cm.transaction.out,state:0
+msgid "State"
+msgstr "الحالة"
+
+#. module: cm_odex
+#: field:cm.transaction.in,subject:0 field:cm.transaction.out,subject:0
+msgid "Subject"
+msgstr "الموضوع"
+
+#. module: cm_odex
+#: field:cm.subject.type,name:0 field:cm.transaction.in,subject_type_id:0
+#: field:cm.transaction.out,subject_type_id:0
+#: model:ir.actions.act_window,name:cm_odex.cm_subject_type_list_action
+#: model:ir.ui.menu,name:cm_odex.cm_subject_type_menu
+msgid "Subject Type"
+msgstr "نوع الموضوع"
+
+#. module: cm_odex
+#: field:cm.transaction.in,message_summary:0
+#: field:cm.transaction.out,message_summary:0
+msgid "Summary"
+msgstr "مختصر"
+
+#. module: cm_odex
+#: view:cm.transaction.in:cm_odex.cm_transaction_in_form
+#: view:cm.transaction.out:cm_odex.cm_transaction_out_form
+msgid "Transaction"
+msgstr "معاملة"
+
+#. module: cm_odex
+#: field:cm.transaction.in,in_date:0 field:cm.transaction.out,out_date:0
+msgid "Transaction Date"
+msgstr "تاريخ المعاملة"
+
+#. module: cm_odex
+#: field:cm.transaction.out,out_date_hijri:0
+msgid "Transaction Date (Hijri)"
+msgstr "تاريخ المعاملة (هجري)"
+
+#. module: cm_odex
+#: view:cm.transaction.in:cm_odex.cm_transaction_in_form
+#: field:cm.transaction.in,transaction_number:0
+#: view:cm.transaction.out:cm_odex.cm_transaction_out_form
+#: field:cm.transaction.out,transaction_number:0
+msgid "Transaction Number"
+msgstr "رقم المعاملة"
+
+#. module: cm_odex
+#: view:cm.transaction.in:cm_odex.cm_transaction_in_tree
+#: view:cm.transaction.out:cm_odex.cm_transaction_out_tree
+msgid "Transactions"
+msgstr "المعاملات"
+
+#. module: cm_odex
+#: model:ir.ui.menu,name:cm_odex.cm_main_menu
+#: model:ir.ui.menu,name:cm_odex.cm_root_menu
+msgid "Transactions Management"
+msgstr "ادارة المعاملات"
+
+#. module: cm_odex
+#: code:addons/cm_odex/models/incoming.py:16
+#: code:addons/cm_odex/models/outgoing.py:30
+#: selection:cm.transaction.in,state:0 selection:cm.transaction.out,state:0
+#, python-format
+msgid "Under Editing"
+msgstr "تحت الانشاء"
+
+#. module: cm_odex
+#: field:cm.transaction.in,message_unread:0
+#: field:cm.transaction.out,message_unread:0
+msgid "Unread Messages"
+msgstr "Unread Messages"
+
+#. module: cm_odex
+#: code:addons/cm_odex/models/entity.py:35
+#, python-format
+msgid "You cannot duplicate aunit!"
+msgstr "لا يمكنك استنساخ الوحدة !"

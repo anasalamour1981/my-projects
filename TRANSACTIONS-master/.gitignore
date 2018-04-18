@@ -1,0 +1,147 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+<<<<<<< HEAD
+=======
+*$py.class
+>>>>>>> 3b4bd9b04edeb50ca1c4a46a1d06755602427cb1
+
+# C extensions
+*.so
+
+<<<<<<< HEAD
+# MAC OS FILE EXT
+.DS_Store
+
+# Local Config Files 
+odoo.config 
+
+# PyCharm
+.idea/
+
+=======
+>>>>>>> 3b4bd9b04edeb50ca1c4a46a1d06755602427cb1
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+<<<<<<< HEAD
+=======
+.eggs/
+lib/
+>>>>>>> 3b4bd9b04edeb50ca1c4a46a1d06755602427cb1
+lib64/
+parts/
+sdist/
+var/
+<<<<<<< HEAD
+*.egg-info/
+.installed.cfg
+*.egg
+# wierd '2' file in alhabib server
+2
+=======
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+>>>>>>> 3b4bd9b04edeb50ca1c4a46a1d06755602427cb1
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+<<<<<<< HEAD
+.cache
+nosetests.xml
+coverage.xml
+=======
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+>>>>>>> 3b4bd9b04edeb50ca1c4a46a1d06755602427cb1
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+<<<<<<< HEAD
+=======
+local_settings.py
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+>>>>>>> 3b4bd9b04edeb50ca1c4a46a1d06755602427cb1
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+<<<<<<< HEAD
+# Fabfile
+fabfile*
+.fabrc
+
+# Sublime Text Project files
+*.sublime-workspace
+*.sublime-project
+
+=======
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# dotenv
+.env
+
+# virtualenv
+.venv
+venv/
+ENV/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+>>>>>>> 3b4bd9b04edeb50ca1c4a46a1d06755602427cb1

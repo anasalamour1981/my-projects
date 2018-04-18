@@ -1,0 +1,89 @@
+<openerp>
+    <data>
+        <record id="cm_transaction_in_tree" model="ir.ui.view">
+            <field name="name">cm.transaction.in.tree</field>
+            <field name="model">cm.transaction.in</field>
+            <field name="arch" type="xml">
+                <tree string="Transactions">
+                    <field name="name"></field>
+                    <field name="in_date"></field>
+                    <field name="subject"></field>
+                    <field name="state"></field>
+                </tree>
+            </field>
+        </record>
+
+        <record id="cm_transaction_in_form" model="ir.ui.view">
+            <field name="name">cm.transaction.in.form</field>
+            <field name="model">cm.transaction.in</field>
+            <field name="arch" type="xml">
+                <form string="Transaction">
+                    <header>
+                        <button type="object" name="launch_procedures" string="Run Procedure" class="oe_highlight" groups="cm_odex.group_transaction_manager,cm_odex.group_transaction_reviewer"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,processed,closed"  />
+                    </header>
+
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <label class="oe_edit_only" string="Transaction Number" attrs="{'invisible': True}"/>
+                                <field placeholder="" attrs="{'required':True}" name="name" class="oe_inline"/>
+                            </h1>
+                        </div>
+                        <group >
+                            <group>
+                                <field name="from_id" domain="[('type','in',['external'])]" required="True"></field>
+                                <field name="type"></field>
+                                <field name="subject" required="True"></field>
+                                <field name="to_ids" widget="many2many_tags" required="True" domain="[('type', 'in', ['unit','employee'])]"></field>
+                                
+                            </group>
+                            <group>
+                                <field name="in_date"></field>
+                                <field name="in_date_hijri"></field>
+                                <field name="cc_ids" widget="many2many_tags" domain="[('type', 'in', ['employee', 'unit'])]"></field>
+                                <field name="subject_type_id" widget="selection" required="True"></field>
+                                <field name="important_id" widget="selection"></field>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="❶">
+                                
+                                <group>
+                                    <group>
+                                        
+                                        <field name="preparation_id" domain="[('type', 'in', ['unit'])]"></field>
+                                        <field name="procedure_id"></field>
+                                        
+                                    </group>
+                                    <group>
+                                        <field name="dispatch_id" widget="selection"></field>
+                                        <field name="confidential_level_id" widget="selection"></field>
+                                        <field name="attachment_num" required="True"></field>
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Information">
+                                
+                                <group>
+                                    <group>
+                                        
+                                        <field name="employee_id" readonly="True"></field>
+                                        <field name="user_id" invisible="True"></field>
+                                    </group>
+                                    <group>
+                                        <field name="entity_id" readonly="True"></field>
+                                    </group>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+    </data>
+</openerp>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <!-- Mail Compose Btn -->
+    <t t-name="mail.ComposeMessageTopButton">
+        <li title='Compose new Message'>
+            <a href="#">
+                <i id="oe_topbar_compose_full_email_icon" class="fa fa-envelope-o"/>
+            </a>
+        </li>
+    </t>
+</templates>
